@@ -1,0 +1,10 @@
+{
+  "name": "Word count",
+  "description": "Count words in a document",
+  "tags": ["basic statistics"],
+  "authors": ["tercen"],
+  "urls": ["https://github.com/tercen/wordcount_operator"],
+  "properties": []
+}
+
+

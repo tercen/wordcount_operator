@@ -1,0 +1,1 @@
+env R_PROFILE_USER=.Rprofile /usr/bin/R --no-save --no-restore --no-environ --slave -f main.R --args --taskId 237eff3d8e96c6d33369276ea72b4540 --serviceUri http://127.0.0.1:5400 --slaveUri http://127.0.0.1:5400 --token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1IjoidGVzdCIsImUiOjE1MjQyODY3NzgzMjd9.UqzDmjKQ7biqozHkhBjgLfkN5pZ5DVCPBR8zpkZ01Ak
