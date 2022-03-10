@@ -2,10 +2,6 @@ library(tercen)
 library(dplyr)
 library(tokenizers)
 
-# options("tercen.serviceUri"="http://172.17.0.1:5400/api/v1/")
-# options("tercen.workflowId"= "0efdb3a90d78f83913059a6d3a182958")
-# options("tercen.stepId"= "25c081dd-4b6f-42e0-8339-72dc821f0bfd")
- 
 tokenize_words = function(docId){
   con = rawConnection(ctx$client$fileService$download(docId), "r+")
   lines = readLines(con, encoding="UTF-8")
