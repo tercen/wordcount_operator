@@ -14,7 +14,7 @@ ctx = tercenCtx()
 if (!any(ctx$cnames == "documentId")) stop("Column factor documentId is required") 
  
 ctx$cselect() %>% 
-  mutate(.ci= 1:nrow(.)-1) %>%
+  mutate(.ci= 1:nrow(.)-1L) %>%
   group_by(.ci) %>%
   summarize(word = tokenize_words(documentId)) %>%
   count(word, name = "word_count_int", sort = TRUE) %>%
