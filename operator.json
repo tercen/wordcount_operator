@@ -10,5 +10,28 @@
   "urls": [
     "https://github.com/tercen/wordcount_operator"
   ],
-  "properties": []
+  "properties": [],
+  "operatorSpec": {
+    "kind": "OperatorSpec",
+    "ontologyUri": "https://tercen.com/_ontology/tercen",
+    "ontologyVersion": "0.0.1",
+    "inputSpecs": [
+      {
+        "kind": "CrosstabSpec",
+        "metaFactors": [
+          {
+            "kind": "MetaFactor",
+            "name": "Document",
+            "type": "",
+            "description": "Document identifier (documentId)",
+            "ontologyMapping": "documentId",
+            "crosstabMapping": "column",
+            "cardinality": "1..n",
+            "factors": []
+          }
+        ],
+        "axis": []
+      }
+    ]
+  }
 }
