@@ -7,7 +7,7 @@
 
 Input projection|.
 ---|---
-`row`        | is the documentId 
+`documentId`    | document identifier 
 
 Output relations|.
 ---|---
