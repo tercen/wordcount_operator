@@ -32,6 +32,38 @@
         ],
         "axis": []
       }
+    ],
+    "outputSpecsV2": [
+      {
+        "kind": "OperatorJoinSpec",
+        "description": "Word frequency counts - no join to input",
+        "joinOperators": [
+          {
+            "kind": "JoinOperator",
+            "joinType": "left",
+            "leftPair": {
+              "kind": "ColumnPair",
+              "lColumns": [],
+              "rColumns": []
+            },
+            "rightRelation": {
+              "kind": "TableRelation",
+              "attributes": [
+                {
+                  "kind": "Attribute",
+                  "name": "word",
+                  "type": "string"
+                },
+                {
+                  "kind": "Attribute",
+                  "name": "word_count",
+                  "type": "double"
+                }
+              ]
+            }
+          }
+        ]
+      }
     ]
   }
 }
